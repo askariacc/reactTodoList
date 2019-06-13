@@ -1,5 +1,7 @@
 import React from 'react';
+import './App.css';
 import TodoForm from './components/TodoForm'
+import TodoList from './components/TodoList';
 export default class TodoDashboard extends React.Component{
     constructor(props){
         super(props)
@@ -9,8 +11,9 @@ export default class TodoDashboard extends React.Component{
     }
     render() {
         return (
-            <div>
+            <div className='dashboard'>
                 <TodoForm />
+                <TodoList />
             </div>
         )
     }
